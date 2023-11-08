@@ -76,7 +76,7 @@ lazy val scala_3 = (project in file("scala-3"))
     libraryDependencies ++= Seq(
 
       // kafka
-      ("org.apache.kafka" %% "kafka"               % "3.1.0").cross(CrossVersion.for3Use2_13),
+//      ("org.apache.kafka" %% "kafka"               % "3.1.0").cross(CrossVersion.for3Use2_13),
 //      ("org.apache.kafka" %% "kafka-streams-scala" % "3.1.0").cross(CrossVersion.for3Use2_13),
 //
 //      // used for serdes

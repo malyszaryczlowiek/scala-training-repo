@@ -1,11 +1,20 @@
 package io.github.malyszaryczlowiek
 
+import i10sealedtrait.{Bar, Foo}
+
 object Main:
 
 
   def main(args: Array[String]): Unit =
-    println(s"RUNNING")
 
+    val f = Foo()
+    val b = Bar
+    println(s"$f")
+    println(s"$b")
+
+  end main
+  
+  
 
 end Main
 

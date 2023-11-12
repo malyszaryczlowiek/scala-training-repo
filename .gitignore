@@ -10,4 +10,5 @@ hs_err_pid*
 /.idea/
 /scala-2.12/target/
 /scala-2.13/target/
-/scala-3/target/
+/scala-31/target/
+/scala-30/target/

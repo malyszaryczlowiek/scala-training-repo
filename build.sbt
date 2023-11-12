@@ -17,14 +17,15 @@ ThisBuild / homepage := Some(url("https://github.com/malyszaryczlowiek/scala-tra
 
 
 
-lazy val scala212 = "2.12.16"
-lazy val scala213 = "2.13.10"
-lazy val scala3   = "3.1.1"
+lazy val scala212 = "2.12.18"
+lazy val scala213 = "2.13.12"
+lazy val scala30  = "3.0.2"
+lazy val scala31  = "3.1.3"
 
 
 
 lazy val root = (project in file("."))
-  .aggregate(scala_2_12, scala_2_13, scala_3)
+  .aggregate(scala_2_12, scala_2_13, scala_30, scala_31)
   .settings(
     // crossScalaVersions must be set to Nil on the aggregating project
     crossScalaVersions := Nil,
@@ -68,10 +69,10 @@ lazy val scala_2_13 = (project in file("scala-2.13"))
   )
 
 
-lazy val scala_3 = (project in file("scala-3"))
+lazy val scala_30 = (project in file("scala-30"))
   .settings(
     idePackagePrefix   := Some("io.github.malyszaryczlowiek"),
-    scalaVersion       := scala3,
+    scalaVersion       := scala30,
     commonSettings,
     libraryDependencies ++= Seq(
 
@@ -83,6 +84,26 @@ lazy val scala_3 = (project in file("scala-3"))
 //      ("io.circe" %% "circe-core"    % "0.14.2").cross(CrossVersion.for3Use2_13),
 //      ("io.circe" %% "circe-generic" % "0.14.2").cross(CrossVersion.for3Use2_13),
 //      ("io.circe" %% "circe-parser"  % "0.14.2").cross(CrossVersion.for3Use2_13)
+
+    )
+    // other settings
+  )
+
+lazy val scala_31 = (project in file("scala-31"))
+  .settings(
+    idePackagePrefix   := Some("io.github.malyszaryczlowiek"),
+    scalaVersion       := scala31,
+    commonSettings,
+    libraryDependencies ++= Seq(
+
+      // kafka
+      //      ("org.apache.kafka" %% "kafka"               % "3.1.0").cross(CrossVersion.for3Use2_13),
+      //      ("org.apache.kafka" %% "kafka-streams-scala" % "3.1.0").cross(CrossVersion.for3Use2_13),
+      //
+      //      // used for serdes
+      //      ("io.circe" %% "circe-core"    % "0.14.2").cross(CrossVersion.for3Use2_13),
+      //      ("io.circe" %% "circe-generic" % "0.14.2").cross(CrossVersion.for3Use2_13),
+      //      ("io.circe" %% "circe-parser"  % "0.14.2").cross(CrossVersion.for3Use2_13)
 
     )
     // other settings

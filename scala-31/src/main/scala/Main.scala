@@ -1,6 +1,6 @@
 package io.github.malyszaryczlowiek
 
-import i10sealedtrait.{Bar, Foo}
+import sealedtrait.{Bar, Foo}
 
 object Main:
 

@@ -1,5 +1,5 @@
 package io.github.malyszaryczlowiek
-package i10sealedtrait
+package sealedtrait
 
 sealed trait SealedTrait
 case class Foo() extends SealedTrait

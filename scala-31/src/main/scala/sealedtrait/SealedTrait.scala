@@ -1,5 +1,5 @@
 package io.github.malyszaryczlowiek
-package i10sealedtrait
+package sealedtrait
 
 /**
  * sealed trait means that we can define subtypes of it

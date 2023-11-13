@@ -19,7 +19,7 @@ ThisBuild / homepage := Some(url("https://github.com/malyszaryczlowiek/scala-tra
 
 lazy val scala212 = "2.12.18"
 lazy val scala213 = "2.13.12"
-// lazy val scala30  = "3.0.2"
+//lazy val scala30  = "3.0.2"
 lazy val scala31  = "3.1.3"
 
 
@@ -47,7 +47,7 @@ lazy val commonSettings = Seq(
 
 lazy val scala_2_12 = (project in file("scala-2.12"))
   .settings(
-    idePackagePrefix   := Some("io.github.malyszaryczlowiek"),
+    // idePackagePrefix   := Some("io.github.malyszaryczlowiek"),
     scalaVersion       := scala212,
     commonSettings,
     libraryDependencies ++= Seq(
@@ -59,7 +59,7 @@ lazy val scala_2_12 = (project in file("scala-2.12"))
 
 lazy val scala_2_13 = (project in file("scala-2.13"))
   .settings(
-    idePackagePrefix   := Some("io.github.malyszaryczlowiek"),
+    // idePackagePrefix   := Some("io.github.malyszaryczlowiek"),
     scalaVersion       := scala213,
     commonSettings,
     libraryDependencies ++= Seq(
@@ -72,7 +72,7 @@ lazy val scala_2_13 = (project in file("scala-2.13"))
 
 lazy val scala_31 = (project in file("scala-31"))
   .settings(
-    idePackagePrefix   := Some("io.github.malyszaryczlowiek"),
+    // idePackagePrefix   := Some("io.github.malyszaryczlowiek"),
     scalaVersion       := scala31,
     commonSettings,
     libraryDependencies ++= Seq(

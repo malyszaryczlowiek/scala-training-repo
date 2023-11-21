@@ -6,6 +6,6 @@ package traitlimiters
  * we extends First trait
  * and we have 'second' and 'third' methods from Second and Third traits.
  */
-class FirstSecondThird extends First with Second with Third with RequiredFirstTraitAndMethodsSecondAndThird {
+class FirstSecondThird extends Zero with First with Second with Third with RequiredFirstTraitAndMethodsSecondAndThird {
 
 }

@@ -11,8 +11,6 @@ class VarargsTests extends AnyFunSuite {
   }
 
 
-
-
   test(s"does definition with * compile and we can pass any collection") {
 
     def varargs(str: String*): Unit = {}

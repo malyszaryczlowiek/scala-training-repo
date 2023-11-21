@@ -1,4 +1,5 @@
 package io.github.malyszaryczlowiek
+package bigintandbigdecimalTests
 
 import org.scalatest.funsuite.AnyFunSuite
 

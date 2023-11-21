@@ -1,4 +1,5 @@
 package io.github.malyszaryczlowiek
+package varargsTests
 
 import org.scalatest.funsuite.AnyFunSuite
 

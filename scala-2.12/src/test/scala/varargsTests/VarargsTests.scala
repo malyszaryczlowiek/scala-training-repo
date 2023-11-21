@@ -1,4 +1,5 @@
 package io.github.malyszaryczlowiek
+package varargsTests
 
 import org.scalatest.funsuite.AnyFunSuite
 
@@ -9,6 +10,8 @@ class VarargsTests extends AnyFunSuite {
     def varargs(str: String*): Unit = {}
 
   }
+
+
 
 
   test(s"does definition with * compile and we can pass any collection") {
